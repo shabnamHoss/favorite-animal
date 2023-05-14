@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Cutie Doggie</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>My favorite Cutie Doggie</h1>
+    </nav>
+    
+    <section class="slideshow-container" id="gallery">
+        <h2 class="gallery-title">Gallery</h2>
+    
+        <div class="mySlides fade">
+          <img src="images/dog1.jpg" >
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/dog2.jpg" >
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/dog3.jpg" >
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      </section>
+      
+     <div class="toggler">
+        <div id="effect" class="ui-widget-content ui-corner-all">
+        <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+   
+        <p>
+        Teacup dogs are a hot commodity. Unscrupulous breeders know these dogs can fetch top dollar. Unethical breeders may mate runts or closely related animals or deliberately stunt a puppy’s growth through starvation.
+        </p>
+    </div>
+    </div>
+ 
+    <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+
+ 
+    <footer>
+        <p class="copy">Copyright 2023</p>
+        <p class="copy">
+          Shabnam Hoss
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

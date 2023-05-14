@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* CSS Resets */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  body {
+    font-family: var(--font-family);
+    
+  }
+  nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3.5rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    } 
+    nav h1 {
+      color: var(--primary-color);
+    }
+    
+    footer {
+        background-color: var(--bg-color);
+        box-shadow: 0 -5px 3px -3px rgba(0, 0, 0, 0.1), 0 5px 3px -3px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        height: 50px;
+        padding: 10px;
+        color: #fcfafa;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+    .copy{
+        color: var(--primary-color);
+    }
+
+    .toggler{
+        width: 500px; height: 200px; position: relative; 
+    }
+    #button{
+         padding: .5em 1em; text-decoration: none;
+        }
+    #effect{
+        width: 240px; height: 170px; padding: 0.4em; position: relative; background: #fff;
+    }
+    #effect h3{
+        margin: 0; padding: 0.4em; text-align: center;
+    }
+  
+    
+
+
+
+    .gallery-title{
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 2.5rem;
+      }
+
+    * {box-sizing: border-box}
+
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    img{
+        width:100%;
+    }
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
